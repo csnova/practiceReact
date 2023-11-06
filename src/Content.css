@@ -1,0 +1,33 @@
+.conFullPage {
+  text-align: center;
+}
+
+.conFullPage > * {
+  margin: 0px;
+  padding: 0px;
+}
+
+.icon {
+  width: 20px;
+  height: auto;
+  padding: 10px;
+}
+
+.conTitle {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.conContentBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.conEmailBox,
+.conPhoneBox,
+.conLocationBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

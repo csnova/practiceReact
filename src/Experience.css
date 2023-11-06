@@ -1,0 +1,35 @@
+.exContentBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.exContentBox > * {
+  margin: 0px;
+  padding: 0px;
+}
+
+.exLeftBox,
+.exRightBox {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.exLeftBox > *,
+.exRightBox > * {
+  margin: 5px;
+}
+
+.exRightBox {
+  flex: 3;
+}
+
+.exLeftBox {
+  flex: 1;
+  min-width: 175px;
+}
+
+.exCompany {
+  font-weight: 700;
+}
