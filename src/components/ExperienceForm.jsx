@@ -13,19 +13,21 @@ function ExperienceForm({ experienceList, setExperienceList }) {
   };
 
   const onAddButtonClick = () => () => {
-    setShowAdd(!showAdd);
     setExperienceList((prevState) => {
-      const newExperience = {
-        school: "School",
-        degree: "Degree",
-        edLocation: "Location",
-        edStartDate: "Start Date",
-        edEndDate: "End Date",
+      const newValue = {
+        company: "Company Name",
+        job: "Job Title",
+        exLocation: "Company Location",
+        exStartDate: "Start Date",
+        exEndDate: "End Date",
+        description: "A full description of job responsibilities.",
         id: `ex${exIndex}`,
       };
       setExIndex(exIndex + 1);
-      return [...prevState, newExperience];
+      return [...prevState, newValue];
     });
+    setShowAdd(!showAdd);
+    console.table(experienceList);
   };
 
   return (

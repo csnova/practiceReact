@@ -13,20 +13,21 @@ function EducationForm({ educationList, setEducationList }) {
   };
 
   const onAddButtonClick = () => () => {
-    setShowAdd(!showAdd);
     setEducationList((prevState) => {
       const newValue = {
-        company: "Company Name",
-        job: "Job Title",
-        exLocation: "Company Location",
-        exStartDate: "Start Date",
-        exEndDate: "End Date",
-        description: "Description of your job responsibilities.",
+        school: "School Name",
+        degree: "Degree",
+        edLocation: "School Location",
+        edStartDate: "Start Date",
+        edEndDate: "End Date",
         id: `ed${edIndex}`,
       };
+      console.table(educationList);
+      console.table(newValue);
       setEdIndex(edIndex + 1);
       return [...prevState, newValue];
     });
+    setShowAdd(!showAdd);
   };
 
   return (
