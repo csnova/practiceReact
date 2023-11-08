@@ -8,6 +8,14 @@ function EducationTile({ educationList, setEducationList, index }) {
     setEdit(!edit);
   };
 
+  function onDeleteButtonClick() {
+    return () => {
+      let currentEdList = [...educationList];
+      currentEdList.splice(index, 1);
+      setEducationList(currentEdList);
+    };
+  }
+
   function makeEdListChangeHandler(edListField) {
     return (e) => {
       const currentEdListItem = educationList[index];
@@ -43,7 +51,9 @@ function EducationTile({ educationList, setEducationList, index }) {
           <button className="editButton" onClick={onButtonClick()}>
             {edit ? "Close" : "Edit"}
           </button>
-          <button className="deleteButton">Delete</button>
+          <button className="deleteButton" onClick={onDeleteButtonClick()}>
+            Delete
+          </button>
         </div>
       </div>
       {edit && (

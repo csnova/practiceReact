@@ -8,6 +8,14 @@ function ExperienceTile({ experienceList, setExperienceList, index }) {
     setEdit(!edit);
   };
 
+  function onDeleteButtonClick() {
+    return () => {
+      let currentExList = [...experienceList];
+      currentExList.splice(index, 1);
+      setExperienceList(currentExList);
+    };
+  }
+
   function makeExListChangeHandler(exListField) {
     return (e) => {
       const currentExListItem = experienceList[index];
@@ -46,7 +54,9 @@ function ExperienceTile({ experienceList, setExperienceList, index }) {
           <button className="editButton" onClick={onButtonClick()}>
             {edit ? "Close" : "Edit"}
           </button>
-          <button className="deleteButton">Delete</button>
+          <button className="deleteButton" onClick={onDeleteButtonClick()}>
+            Delete
+          </button>
         </div>
       </div>
       {edit && (

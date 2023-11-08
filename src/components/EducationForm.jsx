@@ -22,8 +22,6 @@ function EducationForm({ educationList, setEducationList }) {
         edEndDate: "End Date",
         id: `ed${edIndex}`,
       };
-      console.table(educationList);
-      console.table(newValue);
       setEdIndex(edIndex + 1);
       return [...prevState, newValue];
     });
