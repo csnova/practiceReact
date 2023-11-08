@@ -1,0 +1,31 @@
+.exTileBox {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.exTileContentBox {
+  display: flex;
+}
+
+.exTileDates {
+  width: 150px;
+}
+
+.exTileSchool {
+  font-weight: 700;
+}
+
+.editButton,
+.deleteButton,
+.editSubmitButton {
+  background-color: #bddad0;
+  border-color: #87a79c;
+  width: 60px;
+  height: 45px;
+}
+
+.descriptionBox {
+  display: flex;
+  flex-direction: column;
+}

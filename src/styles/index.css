@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Montserrat";
   src: local("Montserrat"),
-    url("./assets/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+    url("../assets/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
 }
 
 html {
@@ -20,7 +20,7 @@ html {
 
 .rightBox {
   flex: 1;
-  min-width: 600px;
+  min-width: 620px;
   min-height: 98vh;
   background-color: #ffffff;
 }
@@ -40,11 +40,17 @@ html {
 }
 
 .education,
-.expereince {
+.experience {
   margin: 0px;
 }
 
 .educationBox,
-.expereinceBox {
+.experienceBox {
   margin: 30px;
+}
+
+@media (max-width: 1400px) {
+  .contentBox {
+    padding: 35px 5px;
+  }
 }

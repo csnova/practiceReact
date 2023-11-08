@@ -1,0 +1,47 @@
+* {
+  margin: 5px;
+}
+
+.edBubble {
+  margin: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.edTitleBar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.edDropDownButton {
+  margin: 0px;
+  padding: 0px;
+  background-color: #bddad0;
+  border-color: #87a79c;
+}
+
+.edDropDown {
+  width: 30px;
+  height: auto;
+}
+
+.edDropDown {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  border: 1px solid #87a79c;
+}
+
+input:focus {
+  background-color: #bddad0;
+  outline-color: #87a79c;
+}
+
+.edButton,
+.addButton {
+  background-color: #bddad0;
+  border-color: #87a79c;
+}

@@ -1,14 +1,10 @@
 import { useState } from "react";
-import phoneLogo from "./assets/phone.svg";
-import emailLogo from "./assets/email.svg";
-import locationLogo from "./assets/location.svg";
-import "./Content.css";
+import phoneLogo from "../assets/phone.svg";
+import emailLogo from "../assets/email.svg";
+import locationLogo from "../assets/location.svg";
+import "../styles/Content.css";
 
-function Content() {
-  const [name, setName] = useState("Doug Rattman");
-  const [email, setEmail] = useState("doug.rattman@apature.labs");
-  const [phone, setPhone] = useState("555-555-555");
-  const [location, setLocation] = useState("Hurron, MI");
+function Content({ name, email, phone, location }) {
   return (
     <div className="conFullPage">
       <p className="conTitle">{name}</p>

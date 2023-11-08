@@ -1,0 +1,48 @@
+* {
+  margin: 5px;
+}
+
+.conBubble {
+  margin: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.conTitleBar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropDownButton {
+  margin: 0px;
+  padding: 0px;
+  background-color: #bddad0;
+  border-color: #87a79c;
+}
+
+.dropDown {
+  width: 30px;
+  height: auto;
+}
+
+.conDropDown {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea,
+input {
+  border: 1px solid #87a79c;
+}
+
+textarea :focus,
+input:focus {
+  background-color: #bddad0;
+  outline-color: #87a79c;
+}
+
+.conButton {
+  background-color: #bddad0;
+  border-color: #87a79c;
+}

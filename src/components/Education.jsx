@@ -1,12 +1,7 @@
 import { useState } from "react";
-import "./Education.css";
+import "../styles/Education.css";
 
-function Education() {
-  const [school, setSchool] = useState("Black Mesa University");
-  const [degree, setDegree] = useState("Bachelors in Physics");
-  const [location, setLocation] = useState("Deming, NM");
-  const [startDate, setStartDate] = useState("01/2020");
-  const [endDate, setEndDate] = useState("Present");
+function Education({ school, degree, location, startDate, endDate }) {
   return (
     <>
       <div className="edContentBox">
