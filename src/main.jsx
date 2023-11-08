@@ -28,7 +28,7 @@ function Print() {
       id: "ed0",
     },
     {
-      school: "University of Aperture",
+      school: "Aperture Science University",
       degree: "PHD in Quantum States",
       edLocation: "Huron, MI",
       edStartDate: "09/2022",
